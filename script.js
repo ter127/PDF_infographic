@@ -37,5 +37,16 @@ window.onload = function() {
             line.style.position = 'fixed'
             line.style.top = '700px'
         }
+        //텍스트 보이기
+        var text_starter = (_documentY - 2200) * 7
+        var mainText = document.querySelector('#main')
+        var mainKurten = document.querySelector('#mainKurten')
+        if (text_starter <= 750 && text_starter > -100) {
+            mainKurten.style.left = text_starter + 'px'
+            mainKurten.style.opacity = 1
+        } else {
+            mainKurten.style.opacity = 0
+        }
+    
 });
 }
