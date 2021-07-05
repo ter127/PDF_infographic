@@ -19,6 +19,8 @@ window.onload = function() {
         var d_b_starter = (_documentY - 550) /3
         if (d_b_starter < 470 ) {
             deafBar.style.height = d_b_starter + 'px'
+            deafBar.style.padding = '20px'
+            deafBar.style.border = '0.5px'
             deafBar.innerHTML = Math.floor(d_b_starter / 10) + '%'
         } else {
             deafBar.style.height = '470px'
@@ -38,15 +40,25 @@ window.onload = function() {
             line.style.top = '700px'
         }
         //텍스트 보이기
-        var text_starter = (_documentY - 2200) * 7
+        var text_starter = (_documentY - 2200) * 6
         var mainText = document.querySelector('#main')
         var mainKurten = document.querySelector('#mainKurten')
-        if (text_starter <= 750 && text_starter > -100) {
-            mainKurten.style.left = text_starter + 'px'
-            mainKurten.style.opacity = 1
-        } else {
-            mainKurten.style.opacity = 0
+        if (text_starter > 0) {
+            mainKurten.classList.add('textani')
+        } 
+        // else if (text_starter < 0) {
+        //     mainKurten.setAttribute('.non')
+        // }
+        //서브 인포그래픽들
+        var info = (_documentY - 2800)/500
+        var d1 = document.querySelector('#databox')
+        if (info > 0 && info <= 1){
+            d1.style.opacity = info
+        } else if ( info <= 0) {
+            d1.style.opacity = 0
+        }else if ( info > 1) {
+            d1.style.opacity = 1
         }
-    
+        
 });
 }

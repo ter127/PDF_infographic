@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic+Coding&family=Noto+Sans+KR&display=swap");
+/* font-family: 'Gugi', cursive;
+font-family: 'Nanum Gothic Coding', monospace;
+font-family: 'Noto Sans KR', sans-serif; */
 .scroll {
   position: fixed;
   top: 10px;
@@ -6,6 +10,7 @@
   width: 100px;
   background-color: black;
   color: white;
+  z-index: 9999;
 }
 #line {
   position: fixed;
@@ -13,38 +18,57 @@
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  width: 900px;
-  border-bottom: 6px solid rgb(255, 255, 255);
+  width: 800px;
+  border-bottom: 6px solid #ffffff;
   display: flex;
 }
 .box {
-  background-color: black;
+  background-color: #000000;
+  overflow-x: hidden;
 }
 #kurten {
   position: absolute;
   left: 400px;
   width: 800px;
-  border-bottom: 6px solid rgb(0, 0, 0);
+  border-bottom: 6px solid #000000;
+  z-index: 9999;
 }
 #non-deaf-bar {
-  left: 100px;
+  left: 125px;
   bottom: 0px;
   position: absolute;
   height: 100px;
-  width: 200px;
-  background-color: blanchedalmond;
+  width: 150px;
+  background-color: #fff5f9;
+  border: 0.5px solid #ed5e93;
+  color: #ed5e93;
+  border-bottom: 0px;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   transition: 0.1s;
+  padding: 30px;
+  box-sizing: border-box;
 }
 #deaf-bar {
-  right: 100px;
+  right: 125px;
   bottom: 0px;
   position: absolute;
-  width: 200px;
-  background-color: blanchedalmond;
+  width: 150px;
+  background-color: #ed5e93;
+  border: 0px solid #fff5f9;
+  color: #fff5f9;
+  border-bottom: 0px;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.cover {
+  position: absolute;
+  width: 800px;
+  height: 100px;
+  background-color: black;
+  border-top: 6px solid #ffffff;
 }
 #main {
   position: relative;
@@ -62,4 +86,47 @@
   height: 25px;
   background-color: white;
   border-left: 7px solid black;
+}
+.databox {
+  background-color: rgb(240, 240, 240);
+  border-radius: 70px;
+}
+.i-contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+.d_b1-2 {
+  display: flex;
+  justify-content: space-between;
+}
+#d_B1 {
+  width: 640px;
+  height: 500px;
+  margin-top: 100px;
+}
+#d_B2 {
+  width: 500px;
+  height: 500px;
+  margin-top: 100px;
+}
+#d_B3 {
+  width: 1200px;
+  height: 500px;
+  margin-top: 60px;
+}
+.textani {
+  animation: boxmove 1.5s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes boxmove {
+  0% {
+    left: 0;
+  }
+  80% {
+    left: 750px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
