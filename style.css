@@ -111,10 +111,10 @@ font-family: 'Noto Sans KR', sans-serif; */
 }
 .oldImage {
   height: 383px;
-  width: 500px;
-  background-image: url("old.png");
+  width: 437px;
+  background-image: url("ol.png");
   background-repeat: no-repeat;
-  background-size: 500px, 383px;
+  background-size: 437px, 383px;
   z-index: 9999;
   margin: 58.5px auto;
 }
@@ -253,4 +253,20 @@ font-family: 'Noto Sans KR', sans-serif; */
   border-radius: 70px;
   background-color: rgb(240, 240, 240);
   margin-bottom: 100px;
+}
+.homeData {
+  width: 435px;
+  height: 360px;
+  background-image: url("home.png");
+  background-repeat: no-repeat;
+  background-size: 435px, 360px;
+  margin: 70px auto;
+}
+.donutData {
+  width: 500px;
+  height: 497px;
+  background-image: url("donut.png");
+  background-repeat: no-repeat;
+  background-size: 500px, 497px;
+  margin: auto;
 }
