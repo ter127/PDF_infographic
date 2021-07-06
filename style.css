@@ -2,7 +2,7 @@
 /* font-family: 'Gugi', cursive;
 font-family: 'Nanum Gothic Coding', monospace;
 font-family: 'Noto Sans KR', sans-serif; */
-.scroll {
+/* .scroll {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -11,7 +11,7 @@ font-family: 'Noto Sans KR', sans-serif; */
   background-color: black;
   color: white;
   z-index: 9999;
-}
+} */
 #line {
   position: fixed;
   top: 700px;
@@ -127,6 +127,8 @@ font-family: 'Noto Sans KR', sans-serif; */
   width: 1200px;
   height: 500px;
   margin-top: 60px;
+  padding-top: 75px;
+  box-sizing: border-box;
 }
 .textani {
   animation: boxmove 1.5s 1;
@@ -265,8 +267,39 @@ font-family: 'Noto Sans KR', sans-serif; */
 .donutData {
   width: 500px;
   height: 497px;
-  background-image: url("donut.png");
+  background-image: url("donuts.png");
   background-repeat: no-repeat;
   background-size: 500px, 497px;
   margin: auto;
+}
+.lasttext {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  font-size: 25px;
+}
+.graphlong {
+  width: 985px;
+  height: 350px;
+  background-image: url("graph2.png");
+  background-repeat: no-repeat;
+  background-size: 985px, 350px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.graphlong:hover {
+  background-image: url("graph1.png");
+  transition: 0.5s;
+}
+/* .d_B3:hover {
+  background-color: rgb(95, 95, 95);
+  transition: 0.5s;
+} */
+.pie {
+  width: 450px;
+  height: 450px;
+  background-image: url("pie.png");
+  background-repeat: no-repeat;
+  background-size: 450px, 450px;
+  margin: 25px auto;
 }
