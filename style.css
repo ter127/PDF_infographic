@@ -109,6 +109,15 @@ font-family: 'Noto Sans KR', sans-serif; */
   height: 500px;
   margin-top: 200px;
 }
+.oldImage {
+  height: 383px;
+  width: 500px;
+  background-image: url("old.png");
+  background-repeat: no-repeat;
+  background-size: 500px, 383px;
+  z-index: 9999;
+  margin: 58.5px auto;
+}
 #d_B2 {
   width: 500px;
   height: 500px;
@@ -230,7 +239,9 @@ font-family: 'Noto Sans KR', sans-serif; */
   top: 150px;
 }
 #story {
-  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
 }
 #d_b {
   display: flex;
