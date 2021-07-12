@@ -6,7 +6,7 @@ window.onload = function() {
     // 스크롤 이벤트 작동 명령어
     window.addEventListener('scroll', function () {
         let _documentY = document.documentElement.scrollTop;
-        // document.querySelector('.scroll').innerHTML=_documentY;
+        document.querySelector('.scroll').innerHTML=_documentY;
         //그래프 x축 
         if (_documentY < 900 && _documentY > 0) {
             kurten.style.left = 400 + _documentY+ 'px'
@@ -137,6 +137,8 @@ window.onload = function() {
             mapData.style.position = 'fixed'
             mapData.style.top = '250px'
         }
-        
+        if (_documentY > 2220) {
+            document.getElementById('j').classList.add('hidden')
+        }
 });
 }
